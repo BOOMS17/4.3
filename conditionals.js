@@ -23,6 +23,17 @@ englishButton.addEventListener("click", function() {
     //  - If the user enters the correct answer, use .innerHTML to display the word "Correct!" in the ".english-message" div. 
     //  - If incorrect, display "Wrong! Try again."
     
+    if (englishInput === 'Mon' || 'mon') 
+        {
+        document.querySelector('.english-message').innerHTML = 'correct'
+    
+        document.querySelector('.english-message').style.color = 'green'
+        }
+        else
+        {
+        document.querySelector('.english-message').innerHTML = 'incorrect'
+        }
+
 
 
 
@@ -42,7 +53,10 @@ mathButton.addEventListener("click", function() {
     //  - If the user enters the correct answer, use .innerHTML to display the word "Yessss!" in the ".math-message" div. 
     //  - If incorrect, display "Wrong! Try again."
     
-
+    if (mathInput === '30') {
+        document.querySelector('.math-message').innerHTML = 'correct'
+    }
+    else {document.querySelector('.math-message').innerHTML = 'incorrect'}
 });
 
 
@@ -54,6 +68,11 @@ ssButton.addEventListener("click", function() {
     //  - The answer should be "Albany".
     //  - If the user enters the correct answer, use .innerHTML to display the word "You got it!" in the ".ss-message" div. 
     //  - If incorrect, display "Womp, womp. Try again."
+
+    if (ssInput === 'Albany') {
+        document.querySelector('.ss-message').innerHTML = 'correct'
+    }
+    else {document.querySelector('.ss-message').innerHTML = 'incorrect'}
 
 
 
@@ -70,6 +89,11 @@ scienceButton.addEventListener("click", function() {
     //  - The answer should be "solid".
     //  - If the user enters the correct answer, use .innerHTML to display the word "Rockstar!" in the ".science-message" div. 
     //  - If incorrect, display "Sad. Try again."
+
+    if (scienceInput === 'solid') {
+        document.querySelector('.science-message').innerHTML = 'correct'
+    }
+    else {document.querySelector('.science-message').innerHTML = 'incorrect'}
 
 
 
